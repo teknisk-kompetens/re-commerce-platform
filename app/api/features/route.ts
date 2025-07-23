@@ -37,7 +37,7 @@ export async function GET(request: NextRequest) {
       )
     }
 
-    const featuresWithVotes = platform.features.map(feature: any) => {
+    const featuresWithVotes = platform.features.map((feature: Feature) => {
       const votes = {
         dislike: 0,
         like: 0,
